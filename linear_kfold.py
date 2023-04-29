@@ -48,4 +48,4 @@ for k in range(2, 11):
 
     # Calculate the average MSE across all 10 folds
     average_mse = np.mean(mse_values)
-    print('Average MSE:','for k = ', i,' ', average_mse)
+    print('Average MSE:','for k = ', k,' ', average_mse)
