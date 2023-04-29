@@ -26,9 +26,9 @@ y = df['Visibility_Hours']
 # Create a Linear Regression object
 model = LinearRegression()
 
-for i in range(2, 11):
-    # Use 10-fold cross validation
-    kf = KFold(n_splits=i, shuffle=True, random_state=42)
+for k in range(2, 11):
+    # Use k-fold cross validation
+    kf = KFold(n_splits=k, shuffle=True, random_state=42)
 
     mse_values = []
 
