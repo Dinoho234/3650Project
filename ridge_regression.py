@@ -19,7 +19,7 @@ df = df.astype('float')
 #handling missing data filling mean value into null value columns
 df.fillna(df.mean(), inplace=True)
 
-## Y contain air pollutans SO2, NOX, NO2, RSP, O3
+## x contain air pollutans SO2
 x = df['SO2'].values.reshape(-1, 1)
 y = df['Visibility_Hours']
 
