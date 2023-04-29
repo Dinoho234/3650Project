@@ -21,7 +21,7 @@ df.fillna(df.mean(), inplace=True)
 
 metereological_data = ['Pressure', 'Temperature', 'Dew_Point', 'Humidity', 'Cloud', 'Rainfall', 'Visibility_Hours', 'Sunshine', 'Radiation','Evaporation', 'Wind_Direction', 'Wind_Speed']
 
-## Y contain air pollutans SO2, NOX, NO2, RSP, O3
+## x contain air pollutans SO2
 x = df.drop(metereological_data, axis=1)
 y = df['Visibility_Hours']
 # Split data into training and test sets
